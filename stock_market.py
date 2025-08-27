@@ -21,7 +21,7 @@ st.title("Stock Market Analysis and Prediction")
 #     st.write('2. Select the start and end dates for the historical data.')  
 
 start_date = st.date_input('Start Date', pd.to_datetime('2020-01-01'))
-end_date = st.date_input('End Date', pd.to_datetime('today'))
+end_date = st.date_input('End Date', pd.to_datetime('2025-07-31'))
 
 # symbol  = 'AAPL'  # Apple Inc. as default
 
