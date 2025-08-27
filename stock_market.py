@@ -30,8 +30,8 @@ end_date = st.date_input('End Date', pd.to_datetime('today'))
 ticker_symbol = st.selectbox("Select Stock Ticker Symbol", ["AAPL","MSFT","GOOGL","AMZN","TSLA","META"])
 
 ticker_data = yf.Ticker(ticker_symbol)
-ticker_df = ticker_data.history(period = '1d', start=start_date, 
-                         end=end_date)
+ticker_df = ticker_data.history(start=start_date, end=end_date)
+
 
 st.dataframe(ticker_df)
 
@@ -68,3 +68,4 @@ with col2:
     plt.ylabel('Frequency')
     st.pyplot(plt)
 
+st.cache_data.clear()
