@@ -61,7 +61,7 @@ Pygments==2.19.2
 pyparsing==3.2.3
 python-dateutil==2.9.0.post0
 pytz==2025.2
-pywin32==310
+#pywin32==310
 pyzmq==27.0.0
 referencing==0.36.2
 requests==2.32.4
@@ -88,3 +88,9 @@ wcwidth==0.2.13
 websockets==15.0.1
 Werkzeug==3.1.3
 yfinance==0.2.63
+numpy==1.26.4
+pandas==2.2.2
+scikit-learn==1.4.2
+matplotlib==3.8.4
+streamlit==1.33.0
+# Add other packages you use, but avoid OS-specific ones like pywin32
